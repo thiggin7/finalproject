@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap');
+
+
+:root {
+    --apple: #D74452;
+    --teal: #2D838D;
+    --beige: #DAD3B7;
+    --orange: #DB9F34;
+    --darkorange: #DB8E36;
+    --white: #ffffff;
+    --black: #000000;
+    --font:'Comfortaa', cursive;
+}
+
+.skip-link {
+    visibility: hidden;
+}
+
+html {
+    background-color: var(--beige);
+}
+
+body {
+    background-color: var(--white);
+    width: 500px;
+    margin: 0 auto;
+    font-family: var(--font);
+  }
+
+  nav {
+    width: 500px;
+    margin-top: -20px;
+    background-color: var(--darkorange);
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.hidden-text {
+    visibility: hidden;
+    height: 1px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--teal);
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+li a {
+    display: block;
+    padding: 20px 20px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+[href="#home"] {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    padding: 40px 16px;
+}
+
+nav a:hover {
+    background-color: var(--black);
+}
+
+#author {
+    pointer-events: none;
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+nav label span {
+    background-color: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+
+nav label span:before, label span:after {
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+nav label span:before {
+    top: 5px;
+}
+
+nav label span:after {
+    top: -5px;
+}
+
+nav input {
+    display: none;
+}
+
+nav input:checked ~ ul {
+    max-height: 500px;
+}
+
+nav input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;}
+
+
+#hero {
+    width: 100%;
+    filter: blur(1px) brightness(0.5);
+    margin-top: -10px;
+}
+
+#claire {
+    width: 120px;
+    position: relative;
+    bottom: 200px;
+    left: 25px;
+    border: 5px solid var(--orange);
+}
+
+h1 {
+    position: absolute;
+    top: 100px;
+    left: 310px;
+    z-index: 2;
+    font-family: --font;
+    font-weight: 700;
+    color: var(--white)
+}
+
+header p {
+    position: absolute;
+    top: 150px;
+    left: 310px;
+    z-index: 2;
+    font-family: --font;
+    color: var(--white);
+    width: 35%;
+}
+
+#books {
+    background-color: var(--teal);
+    margin-top: -220px;
+}
+
+#books h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-family: --font;
+    font-weight: 700;
+    color: var(--white)
+}
+
+#books p {
+    text-align: center;
+    font-family: --font;
+    font-weight: 300;
+    color: var(--white);
+    
+}
+
+
+
+
+  /*Medium Screen*/
+@media screen and (min-width: 750px){
+}
+
+/*Large screen */
+@media screen and (min-width: 1250px){
+}
