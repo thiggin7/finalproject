@@ -24,14 +24,14 @@ html {
 
 body {
     background-color: var(--white);
-    width: 500px;
+    width: 650px;
     margin: 0 auto;
     font-family: var(--font);
   }
 
   /*Nav section*/
   nav {
-    width: 500px;
+    width: 650px;
     margin-top: -20px;
     background-color: var(--darkorange);
     position: absolute;
@@ -92,7 +92,7 @@ nav label {
     padding: 28px 20px;
     position: relative;
     user-select: none;
-    margin-left: 420px;
+    margin-left: 550px;
 }
 
 nav label span {
@@ -152,17 +152,22 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 #claire {
-    width: 120px;
+    width: 150px;
     position: relative;
-    bottom: 200px;
+    bottom: 300px;
     left: 25px;
     border: 5px solid var(--orange);
+}
+
+.about-content {
+    min-width: 300px;
+    max-width: 650px;
 }
 
 h1 {
     position: absolute;
     top: 130px;
-    left: 310px;
+    left: 210px;
     z-index: 2;
     font-family: var(--font);
     font-weight: 700;
@@ -172,11 +177,11 @@ h1 {
 header p {
     position: absolute;
     top: 190px;
-    left: 310px;
+    left: 210px;
     z-index: 2;
     font-family: var(--font);
     color: var(--white);
-    width: 35%;
+    width: 50%;
 }
 
 /*Books section*/
@@ -404,7 +409,7 @@ small a {
 
   
   /*Medium Screen*/
-@media screen and (min-width: 750px){
+@media screen and (min-width: 700px){
     body, nav {
         width: 750px;
     }
@@ -435,11 +440,12 @@ small a {
         border: 5px solid var(--orange); 
     }
     
+
     h1 {
         position: absolute;
         top: 170px;
         font-size: 50px;
-        color: var(--white)
+        margin-left: 100px;
     }
 
     header p {
@@ -448,6 +454,7 @@ small a {
         left: 310px;
         width: 50%;
         font-size: 18px;
+        line-height: 1.5;
     }
 
     /*Books section*/
@@ -469,6 +476,7 @@ small a {
         color: var(--white);
         margin-left: 50px;
         margin-right: 50px;
+        line-height: 1.5;
     }
 
 /*Events section*/
@@ -522,7 +530,7 @@ small a {
         font-size: 40px;
     }
     
-    /*EDIT THE FORM!!!*/
+    /*----------------------EDIT THE FORM!!-------------------!*/
     .fName {
         float: left;
         width: 45%;
@@ -581,5 +589,129 @@ small a {
 }
 
 /*Large screen */
-@media screen and (min-width: 1250px){
+@media screen and (min-width: 938px){
+    body, nav {
+        width: 938px;
+    }
+    /*Nav section*/
+    ul {
+        display: flex;
+        list-style: none;
+        overflow: visible;
+    }
+
+    nav li {
+        font-size: 22px;
+    }
+    nav a {
+        position:relative;
+        left: 530px;
+        top: -45px;
+    }
+    nav label {
+        visibility: hidden;
+    }
+
+    [href="#home"] {
+        font-size: 45px;
+        top: 30px;
+    }
+
+    /*Hero section*/
+
+    header {
+        margin-top: -470px;
+    }
+    #claire {
+        width: 250px;
+        bottom: 455px;
+    }
+        
+    h1 {
+        position: relative;
+        top: 650px;
+        left: 210px;
+        font-size: 60px;
+    }
+    header p {
+        position: relative;
+        text-align: left;
+        width: 85%;
+        top: 550px;
+        left: 310px;
+        padding-top: 70px;
+        line-height: 1.5;
+        font-size: 40px;
+    }
+
+      /*Books section*/
+      
+      #books {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: -395px;
+
+    }
+
+    #books h2, p  {
+        grid-column: span 4;
+    }
+    
+    #books h2{
+        font-size: 45px;
+    }
+
+
+    /*Events section*/
+
+    #events h2, p{
+        text-align: center;
+        grid-column: span 2;
+    }
+    .top-left, .btm-left {
+        position: relative;
+        left: 180px;
+        bottom: 140px;
+    }
+    .top-right, .btm-right {
+        position: relative;
+        bottom: 140px;
+        right: -180px
+    }
+    
+
+}
+    /*#events p {
+        padding-bottom: 50px;
+    }
+    
+    .city h3 {
+        padding-bottom: 50px;
+        margin-top: -20px;
+    }
+
+    .city {
+        width: 70%;
+        padding-top: 20px;
+        border-bottom: 4px solid var(--apple);
+        margin-bottom: 50px;
+    }
+    
+    address {
+        margin-bottom: -40px;
+    }
+    .top-left, .btm-left {
+        position: relative;
+        left: 180px;
+        bottom: 170px;
+    }
+
+    .top-right, .btm-right {
+        position: relative;
+        bottom: 170px;
+        right: -180px
+    }
+
+    
+    
 }
