@@ -647,13 +647,13 @@ small a {
       /*Books section*/
       
       #books {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
         margin-top: -395px;
-
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    #books h2, p  {
+
+    #books h2, #books p  {
         grid-column: span 4;
     }
     
@@ -663,6 +663,10 @@ small a {
 
 
     /*Events section*/
+
+    #events {
+        display: grid;
+    }
 
     #events h2, p{
         text-align: center;
@@ -678,40 +682,5 @@ small a {
         bottom: 140px;
         right: -180px
     }
-    
-
-}
-    /*#events p {
-        padding-bottom: 50px;
-    }
-    
-    .city h3 {
-        padding-bottom: 50px;
-        margin-top: -20px;
-    }
-
-    .city {
-        width: 70%;
-        padding-top: 20px;
-        border-bottom: 4px solid var(--apple);
-        margin-bottom: 50px;
-    }
-    
-    address {
-        margin-bottom: -40px;
-    }
-    .top-left, .btm-left {
-        position: relative;
-        left: 180px;
-        bottom: 170px;
-    }
-
-    .top-right, .btm-right {
-        position: relative;
-        bottom: 170px;
-        right: -180px
-    }
-
-    
     
 }
