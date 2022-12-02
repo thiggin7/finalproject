@@ -319,6 +319,18 @@ input{
     font-weight: bold;
 }
 
+.socials {
+    text-align: center;
+}
+
+/*FIX BOOK EVENTS GRID PRODUCT1234 & SERVICES1234*/
+.book-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
   /*Medium Screen*/
 @media screen and (min-width: 750px){
 }
