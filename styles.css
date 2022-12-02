@@ -540,7 +540,6 @@ small a {
         font-weight: normal;
     }
 
-
     .medium-screen {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -548,8 +547,8 @@ small a {
         margin-right: 50px;
     }
 
-    #legalInfo {
-        grid-column: span 2;
+    .link {
+        margin-top: 40px;;
     }
 
     .socials img {
@@ -560,6 +559,25 @@ small a {
         margin-left: 20px;
     }
 
+    #legalInfo {
+        display: flex;
+    }
+
+    #legalInfo small {
+        position: relative;
+    }
+   
+    .terms {
+        right: -500px;
+    }
+
+    .privacy {
+        right: -490px;
+    }
+
+    .copy {
+        left: -170px;
+    }
 }
 
 /*Large screen */
