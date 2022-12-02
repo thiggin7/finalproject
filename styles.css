@@ -70,8 +70,8 @@ li a {
     font-weight: bold;
     font-size: 30px;
     position: absolute;
-    top: 30px;
-    left: 90px;
+    top: 45px;
+    left: 0px;
     padding: 40px 16px;
 }
 
@@ -158,7 +158,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 h1 {
     position: absolute;
-    top: 100px;
+    top: 130px;
     left: 310px;
     z-index: 2;
     font-family: var(--font);
@@ -168,7 +168,7 @@ h1 {
 
 header p {
     position: absolute;
-    top: 150px;
+    top: 190px;
     left: 310px;
     z-index: 2;
     font-family: var(--font);
@@ -180,7 +180,7 @@ header p {
 #books {
     background-color: var(--teal);
     margin-top: -220px;
-    padding-top: 0px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -375,6 +375,12 @@ input{
     color: var(--apple);
   }
 
+
+#legalInfo {
+    margin-top: 20px;
+    height: 50px;
+    background-color: var(--darkorange);
+}
 .policy {
     
 }
