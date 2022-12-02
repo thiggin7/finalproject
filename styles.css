@@ -1,3 +1,5 @@
+/*ADD RESET CSS STYLE*/
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap');
 
 
@@ -271,7 +273,6 @@ button {
     border: 5px solid var(--darkorange);
     padding: 8px 25px;
     color: var(--white);
-    font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -513,6 +514,50 @@ small a {
         position: relative;
         bottom: 170px;
         right: -180px
+    }
+
+    
+     /*Newsletter section*/   
+    #newsletter h2 {
+        font-size: 40px;
+    }
+    
+    /*EDIT THE FORM!!!*/
+    .fName {
+        float: left;
+        width: 45%;
+    }
+
+    .lName {
+        float: right;
+        width: 45%;
+    } 
+  
+    input[type=submit]{
+        width: 35%;
+	    margin-top: 20px;
+        margin-left: 62.5%;
+        font-weight: normal;
+    }
+
+
+    .medium-screen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #legalInfo {
+        grid-column: span 2;
+    }
+
+    .socials img {
+        width: 8%;
+    }
+
+    .footer-links {
+        margin-left: 20px;
     }
 
 }
