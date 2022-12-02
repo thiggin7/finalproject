@@ -27,6 +27,7 @@ body {
     font-family: var(--font);
   }
 
+  /*Nav section*/
   nav {
     width: 500px;
     margin-top: -20px;
@@ -88,15 +89,16 @@ nav label {
     padding: 28px 20px;
     position: relative;
     user-select: none;
+    margin-left: 420px;
 }
 
 nav label span {
     background-color: var(--white);
     display: block;
-    height: 2px;
+    height: 1.5px;
     position: relative;
     transition: background-color .2s ease-out;
-    width: 18px;
+    width: 35px;
 }
 
 nav label span:before, label span:after {
@@ -139,6 +141,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;}
 
 
+/*Hero section*/
 #hero {
     width: 100%;
     filter: blur(1px) brightness(0.5);
@@ -173,14 +176,16 @@ header p {
     width: 35%;
 }
 
+/*Books section*/
 #books {
     background-color: var(--teal);
     margin-top: -220px;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 #books h2 {
     text-align: center;
-    padding-top: 40px;
     font-family: var(--font);
     font-weight: 700;
     color: var(--white)
@@ -195,6 +200,9 @@ header p {
     margin-right: 50px;
 }
 
+figure {
+    padding-bottom: 30px;
+}
 figure img {
     width: 100%;
     border: 5px solid var(--apple);
@@ -202,7 +210,7 @@ figure img {
 
 figure h3 {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 0px;
     font-family: var(--font);
     font-weight: 700;
     color: var(--white);
@@ -220,6 +228,7 @@ figcaption span {
     padding-top: 15px;
 }
 
+/*Events section*/
 
 #events h2 {
     font-family: var(--font);
@@ -265,6 +274,7 @@ button {
     cursor: pointer;
 }
 
+/*Newsletter section*/
 #newsletter {
     background-color: var(--teal);   
 }
@@ -319,18 +329,57 @@ input{
     font-weight: bold;
 }
 
+/*Footer section*/
 .socials {
     text-align: center;
 }
 
-/*FIX BOOK EVENTS GRID PRODUCT1234 & SERVICES1234*/
+
 .book-events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+}
+
+.link, .footer-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
+.row{
+    margin-top: 50px;
+   }
+
+  h4 {
+    width: 50%;
+    border-bottom: 4px solid var(--apple);
+    padding-bottom: 20px;
+    margin-left: 55px;
+   }
+
+.link-words {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; 
+    font-weight: 300;
+  }
+
+  .link-words a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .link-words a:hover{
+    color: var(--apple);
+  }
+
+.policy {
+    
+}
+
+  
   /*Medium Screen*/
 @media screen and (min-width: 750px){
 }
