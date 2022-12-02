@@ -332,6 +332,7 @@ input{
 /*Footer section*/
 .socials {
     text-align: center;
+    padding-top: 40px;
 }
 
 
@@ -377,12 +378,25 @@ input{
 
 
 #legalInfo {
+    color: var(--white);
     margin-top: 20px;
-    height: 50px;
+    padding-top: 20px;
     background-color: var(--darkorange);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
 }
-.policy {
-    
+
+small a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.copy {
+  grid-column: span 2;
+  padding-bottom: 20px;
+  
 }
 
   
