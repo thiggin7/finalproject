@@ -547,25 +547,7 @@ small a {
         font-size: 40px;
     }
     
-    /*----------------------EDIT THE FORM!!-------------------!*/
 
-
-    .fName {
-        float: left;
-        width: 45%;
-    }
-
-    .lName {
-        float: right;
-        width: 45%;
-    } 
-  
-    input[type=submit]{
-        width: 35%;
-	    margin-top: 20px;
-        margin-left: 62.5%;
-        font-weight: normal;
-    }
 
     .medium-screen {
         display: grid;
@@ -701,5 +683,7 @@ small a {
         bottom: 140px;
         right: -180px
     }
+
+    
     
 }
