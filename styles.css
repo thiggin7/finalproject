@@ -523,8 +523,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 #claire {
-    width: 150px;
-    height: 250px;
+    width: 25%;
+    height: auto;
     position: relative;
     bottom: 300px;
     left: 25px;
@@ -813,8 +813,8 @@ small a {
 
     /*Hero section*/
     #claire {
-        width: 200px;
-        height: 290px;
+        width: 26%;
+        height: auto;
         position: relative;
         bottom: 350px;
         left: 25px;
@@ -1073,8 +1073,8 @@ small a {
         margin-top: -470px;
     }
     #claire {
-        width: 350px;
-        height: 500px;
+        width: 29%;
+        height: auto;
         bottom: 600px;
     }
         
