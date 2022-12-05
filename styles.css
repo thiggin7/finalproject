@@ -357,7 +357,7 @@
 
 :root {
     --apple: #D74452;
-    --teal: #2D838D;
+    --teal: #215F69; /*Color adjusted to suit accessbility*/
     --beige: #DAD3B7;
     --orange: #DB9F34;
     --darkorange: #DB8E36;
