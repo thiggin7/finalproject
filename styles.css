@@ -524,6 +524,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 #claire {
     width: 150px;
+    height: 250px;
     position: relative;
     bottom: 300px;
     left: 25px;
@@ -560,7 +561,7 @@ header p {
 /*Books section*/
 #books {
     background-color: var(--teal);
-    margin-top: -250px;
+    margin-top: -268px;
     padding-top: 40px;
     padding-bottom: 20px;
 }
@@ -810,7 +811,8 @@ small a {
 
     /*Hero section*/
     #claire {
-        width: 180px;
+        width: 200px;
+        height: 290px;
         position: relative;
         bottom: 350px;
         left: 25px;
@@ -844,7 +846,7 @@ small a {
     #books {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: -288px;
+        margin-top: -310px;
     }
     
     #books h2, p  {
@@ -1064,6 +1066,7 @@ small a {
     }
     #claire {
         width: 350px;
+        height: 500px;
         bottom: 600px;
     }
         
