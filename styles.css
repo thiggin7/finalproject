@@ -844,7 +844,7 @@ small a {
     #books {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: -274px;
+        margin-top: -288px;
     }
     
     #books h2, p  {
