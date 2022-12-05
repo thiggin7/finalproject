@@ -737,11 +737,12 @@ input {
     margin-top: 50px;
    }
 
-  h4 {
+  .link h2 {
     width: 50%;
     border-bottom: 4px solid var(--apple);
     padding-bottom: 20px;
     margin-left: 55px;
+    font-size: 1.2em;
    }
 
 .link-words {
