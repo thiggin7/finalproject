@@ -589,7 +589,8 @@ figure {
 }
 figure img {
     width: 100%;
-    border: 5px solid var(--apple);
+    height: auto;
+    border: 8px solid var(--apple);
 }
 
 figure h3 {
@@ -864,6 +865,12 @@ small a {
         line-height: 1.5;
     }
 
+    figure img {
+        width: 100%;
+        height: auto;
+        border: 8px solid var(--apple);
+    }
+
     figcaption {
         font-size: 1.2em;
     }
@@ -1107,6 +1114,12 @@ small a {
         font-size: 1.75em;
         margin-left: 80px;
         margin-right: 80px;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        border: 8px solid var(--apple);
     }
 
     figcaption {
