@@ -428,21 +428,23 @@ ul {
 
 li a {
     display: block;
-    padding: 20px 20px;
+    padding: 45px 20px;
     margin-top: -20px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     text-decoration: none;
     color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 [href="#home"] {
     text-transform: capitalize;
     font-variant: small-caps;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.875em;
     position: absolute;
     margin-left: 10px;
-    top: 45px;
+    top: 30px;
     left: 0px;
     padding: 40px 16px;
 }
@@ -470,7 +472,7 @@ nav label span {
     height: 1.5px;
     position: relative;
     transition: background-color .2s ease-out;
-    width: 35px;
+    width: 45px;
 }
 
 nav label span:before, label span:after {
@@ -534,19 +536,21 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 h1 {
+    font-size: 3.5em;
     position: absolute;
     top: 130px;
-    left: 210px;
+    left: 230px;
     z-index: 2;
     font-family: var(--font);
     font-weight: 700;
-    color: var(--white)
+    color: var(--white);
 }
 
 header p {
+    font-size: 1.5em;
     position: absolute;
-    top: 190px;
-    left: 210px;
+    top: 220px;
+    left: 230px;
     z-index: 2;
     font-family: var(--font);
     color: var(--white);
@@ -562,6 +566,7 @@ header p {
 }
 
 #books h2 {
+    font-size: 2.8em;
     text-align: center;
     font-family: var(--font);
     font-weight: 700;
@@ -569,6 +574,7 @@ header p {
 }
 
 #books p {
+    font-size: 1.3em;
     text-align: center;
     font-family: var(--font);
     font-weight: 300;
@@ -594,6 +600,7 @@ figure h3 {
 }
 
 figcaption {
+    font-size: 1.2em;
     text-align: center;
     font-family: var(--font);
     font-weight: 300;
@@ -609,12 +616,14 @@ figcaption span {
 /*Events section*/
 
 #events h2 {
+    font-size: 2.8em;
     font-family: var(--font);
     font-weight: 700;
     text-align: center;
 }
 
 #events p {
+    font-size: 1.3em;
     text-align: center;
     font-family: var(--font);
     font-weight: 300;
@@ -642,6 +651,10 @@ figcaption span {
     margin-right: 70px;
 }
 
+address, time {
+    font-size: 1.1em;
+}
+
 button {
     background-color: var(--orange);
     border: 5px solid var(--darkorange);
@@ -657,6 +670,7 @@ button {
 }
 
 #newsletter h2 {
+    font-size: 2.7em;
     padding-top: 30px;
     font-family: var(--font);
     font-weight: 700;
@@ -668,53 +682,35 @@ button {
 color: var(--white);
 }
 
+/*Form section*/
+form {
+    display: flex;
+}
+
 form {
     display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.4rem;
-    padding-bottom: 50px;
+}
+form div {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+form label {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+input {
+    padding: 10px;
 }
 
 .btn {
-    grid-column: 1/-1;
-}
-
-input {
-    width: 500px;
-    background-color: var(--white);
-}
-
-.news-button {
-    width: 500px;
-}
-
-input, label {
-	display: block;
-    font-size: 18px;
-}
-
-label{
-	padding-left: 8px;
-	margin: 12px 0 4px 0;
-}
-
-input{
-	font-size: 16px;
-	padding: 4px 8px;
-	border: 1px solid var(--white);
-	height: 1.5em;
-}
-
-  input[type=submit]{
-	padding: 10px 50px;
-	height: auto;
-	margin-top: 15px;
-	color: #fff;
-	background-color: var(--orange);
-	border: 5px solid var(--darkorange);
-    font-weight: bold;
+    width: 50%;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    font-size: 1.2em;
 }
 
 /*Footer section*/
@@ -757,7 +753,7 @@ input{
   .link-words a {
     color: var(--black);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
   }
   
   .link-words a:hover{
@@ -803,8 +799,9 @@ small a {
 
     nav a {
         position:relative;
-        left: 430px;
-        top: -45px;
+        left: 460px;
+        top: -65px;
+        padding: 34px 10px;
     }
 
     nav label {
@@ -813,9 +810,9 @@ small a {
 
     /*Hero section*/
     #claire {
-        width: 170px;
+        width: 180px;
         position: relative;
-        bottom: 300px;
+        bottom: 350px;
         left: 25px;
         border: 5px solid var(--orange); 
     }
@@ -824,17 +821,22 @@ small a {
     h1 {
         position: absolute;
         top: 170px;
-        font-size: 50px;
+        font-size: 3.125em;
         margin-left: 100px;
     }
 
     header p {
         position: absolute;
         top: 250px;
-        left: 310px;
+        left: 320px;
         width: 50%;
-        font-size: 18px;
+        font-size: 1.45em;
         line-height: 1.5;
+    }
+
+    [href="#home"] {
+        font-size: 1.8em;
+        top: 20px;
     }
 
     /*Books section*/
@@ -851,12 +853,17 @@ small a {
 
     #books p {
         text-align: center;
+        font-size: 1.3em;
         font-family: var(--font);
         font-weight: 300;
         color: var(--white);
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 60px;
+        margin-right: 60px;
         line-height: 1.5;
+    }
+
+    figcaption {
+        font-size: 1.2em;
     }
 
 /*Events section*/
@@ -866,7 +873,7 @@ small a {
     }
 
     #events h2 {
-        font-size: 40px;
+        font-size: 2.5em;
     }
     
     #events h2, p {
@@ -874,6 +881,7 @@ small a {
     }
 
     #events p {
+        font-size: 1.3em;
         padding-bottom: 50px;
     }
     
@@ -891,61 +899,77 @@ small a {
     
     address {
         margin-bottom: -40px;
+        line-height: 1.5;
+    }
+    time {
+        line-height: 1.5;
     }
     .top-left, .btm-left {
         position: relative;
-        left: 180px;
+        left: 160px;
         bottom: 170px;
     }
 
-    .top-right, .btm-right {
+    .top-right {
         position: relative;
         bottom: 170px;
-        right: -180px
+        right: -160px
+    }
+
+    .btm-right {
+        position: relative;
+        bottom: 150px;
+        right: -160px
     }
 
     
-     /*Newsletter section*/   
+    /*Newsletter section*/   
     #newsletter h2 {
-        font-size: 40px;
+        font-size: 2.5em;
     }
-    
+
+    /*----MEDIUM SCREEN FORM---------------*/
     form {
-        padding-bottom: 150px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form div {
+        display: grid;
+        justify-items: center;
+    }
+
+    form input {
+        width: 80%;
+        padding: 12px;
     }
 
     .emailCol {
-        grid-column: 1/-1;
-        position: relative;
-        left: 35px;
+        margin-left: 100px;
     }
 
-    .btn {
-        grid-column: 2/-1;
-        text-align: right;
-        margin-right: 50px;
+    .emailCol input {
+        width: 672px;
+        margin-left: -75px;
+    }
+    .emailCol label {
+        margin-left: -640px;
     }
 
-    input {
-        width: 300px;
+     #lName label {
+        margin-left: -220px;
     }
 
-    #lName {
-        margin-right: 50px;
-    }
-    #email {
-        position: relative;
-        width: 370px;
-        left: 0px;
+    #fName label {
+        margin-left: -220px;
     }
 
     .news-button {
-        width: 300px;
-        margin-right: 0;
-        margin-left: 0.7rem;
-        margin-top: 1rem;
-        position: relative;
-        top: 90px
+        width: 80%;
+    }
+    .btn {
+        padding-top: 10px;
+        margin-right: -10px;
     }
 
 
@@ -993,8 +1017,9 @@ small a {
 /*Large screen */
 @media screen and (min-width: 938px){
     body, nav {
-        width: 938px;
+        width: 1208px;
     }
+
     /*Nav section*/
     ul {
         display: flex;
@@ -1003,20 +1028,33 @@ small a {
     }
 
     nav li {
-        font-size: 22px;
+        font-size: 1.375em;
+       
     }
     nav a {
         position:relative;
-        left: 530px;
-        top: -45px;
+        left: 780px;
+        top: -80px;
     }
+
     nav label {
         visibility: hidden;
     }
 
     [href="#home"] {
-        font-size: 45px;
-        top: 30px;
+        font-size: 1.8em;
+        top: 0px;
+    }
+
+    li a {
+        display: block;
+        padding: 28px 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: var(--white);
+        text-transform: uppercase;
+        font-weight: bold;
     }
 
     /*Hero section*/
@@ -1025,44 +1063,52 @@ small a {
         margin-top: -470px;
     }
     #claire {
-        width: 250px;
-        bottom: 455px;
+        width: 350px;
+        bottom: 600px;
     }
         
     h1 {
         position: relative;
         top: 650px;
-        left: 210px;
-        font-size: 60px;
+        left: 370px;
+        font-size: 3.75em;
     }
     header p {
         position: relative;
         text-align: left;
-        width: 85%;
+        width: 100%;
         top: 550px;
-        left: 310px;
+        left: 470px;
         padding-top: 70px;
         line-height: 1.5;
-        font-size: 40px;
+        font-size: 2.2em;
     }
 
       /*Books section*/
       
-      #books {
-        margin-top: -395px;
+    #books {
+        margin-top: -545px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-
 
     #books h2, #books p  {
         grid-column: span 4;
     }
     
     #books h2{
-        font-size: 45px;
+        font-size: 3.3em;
     }
 
+    #books p {
+        font-size: 1.75em;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    figcaption {
+        font-size: 1.2em;
+    }
 
     /*Events section*/
 
@@ -1070,20 +1116,201 @@ small a {
         display: grid;
     }
 
+    #events h2 {
+        font-size: 3.3em;
+    }
+
+    #events p {
+        font-size: 1.75em;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
     #events h2, p{
         text-align: center;
         grid-column: span 2;
     }
-    .top-left, .btm-left {
+
+    #events section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .city h3 {
+        font-size: 1.5em;
+    }
+
+    .top-left {
         position: relative;
-        left: 180px;
+        left: 190px;
         bottom: 140px;
     }
-    .top-right, .btm-right {
+    
+    .btm-left {
+        position: relative;
+        left: 200px;
+        bottom: 160px;
+    }
+
+    .top-right {
+        position: relative;
+        bottom: 155px;
+        right: -180px
+    }
+    
+    .btm-right {
         position: relative;
         bottom: 140px;
         right: -180px
     }
 
+    address, time  {
+        font-size: 1.1em ;
+    }
 
+    /*Newsletter*/
+
+    #newsletter h2 {
+        font-size: 3em;
+    }
+
+    /*Form section*/
+    
+    #newsletter h2 {
+        padding-bottom: 30px;
+    }
+    label {
+        display: block;
+        /* spacing */
+        margin-bottom: 0.4rem;
+    }
+    
+
+    /* Form section*/
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        width: 70%;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form label {
+        font-size: 1.3em;
+        margin-bottom: -10px;
+    }
+
+    form input {
+        width: 250px;
+        padding: 10px;
+        margin-left: -140px;
+    }
+    
+    #fName label {
+        margin-right: 83px;
+        margin-bottom: 10px;
+    }
+
+    #lName label {
+        margin-right: 83px;
+        margin-bottom: 10px;
+    }
+
+    #lName {
+        margin-right: 0px;
+    }
+
+    #fName {
+        margin-right: 0px;
+    }
+
+    .emailCol {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .emailCol input {
+        width: 250px;
+        margin-left: -69px;
+        padding: 9px;
+        margin-top: 0px;
+    }
+    .emailCol label {
+        margin-left: -195px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        position: relative;
+        width: 100%;
+        left: 620px;
+        margin-top: -20px;
+    }
+
+
+    /*form {
+        display: grid;
+    }
+
+    form div {
+        display: flex;
+    }
+
+    form label {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 10px;
+    }
+    #email {
+        width: 300px;
+    }
+
+    .emailCol {
+        margin-left: -50px;
+    }
+
+
+    .btn {
+        margin-left: -265px;
+        font-size: 1.2em;
+    }*/
+
+
+    /*Footer section*/
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 150px;
+        margin-right: -600px;
+    }
+
+    #legalInfo {
+        height: 250px;
+        width: 280px;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       background-color: var(--white);
+    }
+
+    #legalInfo a {
+        color: var(--black);
+    }
+    .copy {
+        margin-top: -20px;
+        margin-right: -330px;
+        color: var(--black);
+    }
+
+    .terms {
+        right: 40px;
+        top: 70px;
+    }
+
+    .privacy {
+        right: 10px;
+        top: 70px;
+    }
 }
